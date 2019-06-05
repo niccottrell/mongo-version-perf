@@ -30,19 +30,23 @@ sudo yum update -y
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.0/install.sh | bash
 . ~/.nvm/nvm.sh
 nvm install 4.4.5
-npm install -g m
-sudo mkdir /usr/local/m
+# sudo mkdir /usr/local/m
+npm install -g m --build-from-source
 sudo chmod a+rwx /usr/local/m
+sudo chmod a+rwx /usr/local/bin
+echo y | m 3.4.20
+echo y | m 3.6.12
+echo y | m 4.0.9
+sudo chmod a+rwx /usr/local/bin
 sudo yum install -y gcc
 pip install --user psutil pymongo mtools
 
-cd /data
-sudo chmod a+rwx /data
-vi launch.sh
+# cd /data
+#sudo chmod a+rwx /data
+# vi launch.sh
 chmod a+x launch.sh
-
 ```
 
 ```
 ./launch.sh
-``
+```
