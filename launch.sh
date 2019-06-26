@@ -12,11 +12,11 @@ do_test () {
 
 killall mongod
 
-echo y | m 3.4.20
-# do_test "3.4"
+echo y | m 3.4.21
+do_test "3.4"
 
-echo y | m 3.6.12
-# do_test "3.6"
+echo y | m 3.6.13
+do_test "3.6"
 
-echo y | m 4.0.9
+echo y | m 4.0.10
 do_test "4.0"
