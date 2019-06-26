@@ -50,6 +50,11 @@ pip install --user psutil pymongo mtools
 chmod a+x launch.sh
 ```
 
+### Run tests
 ```
 ./launch.sh
+```
+or to redirect output to nohup.out and avoid problems with shell timeouts:
+```
+nohup ./launch.sh &
 ```
