@@ -4,9 +4,9 @@
 
 ```
 sudo yum -y install xfsprogs
-sudo mkfs -t xfs /dev/nvme1n1
+sudo mkfs -t xfs /dev/sdb
 sudo mkdir /data
-sudo mount /dev/nvme1n1 /data
+sudo mount /dev/sdb /data
 df -h
 ```
 
