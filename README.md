@@ -37,8 +37,8 @@ sudo chown -R ec-2user: /data
 sudo chmod -R a+rwx /data
 sudo chmod -R a+rwx /usr/local/m
 sudo chmod -R a+rwx /usr/local/bin
-echo y | m 3.4.20
-echo y | m 3.6.12
+echo y | m 3.4.21
+echo y | m 3.6.13
 echo y | m 4.0.10
 sudo chmod -R a+rwx /usr/local/bin
 sudo yum install -y gcc
