@@ -32,12 +32,15 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.0/install.sh | b
 nvm install 4.4.5
 # sudo mkdir /usr/local/m
 npm install -g m --build-from-source
-sudo chmod a+rwx /usr/local/m
-sudo chmod a+rwx /usr/local/bin
+sudo mkdir -p /usr/local/m/versions
+sudo chown -R ec-2user: /data
+sudo chmod -R a+rwx /data
+sudo chmod -R a+rwx /usr/local/m
+sudo chmod -R a+rwx /usr/local/bin
 echo y | m 3.4.20
 echo y | m 3.6.12
-echo y | m 4.0.9
-sudo chmod a+rwx /usr/local/bin
+echo y | m 4.0.10
+sudo chmod -R a+rwx /usr/local/bin
 sudo yum install -y gcc
 pip install --user psutil pymongo mtools
 
